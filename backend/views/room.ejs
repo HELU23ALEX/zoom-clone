@@ -4,12 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer>
-      console.log("<%= roomId %>) 
+    <script>
+      <!-- console.log("<%= roomId %>"); -->
+      const ROOM_ID = "<%= roomId %>"
     </script>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <h1>hey</h1>
+    <div id="video-grid"></div>
   </body>
 </html>
